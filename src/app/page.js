@@ -1,103 +1,141 @@
-import Image from "next/image";
+import { CountdownTimer } from "@/components/countdown-timer"
+import { DocumentGallery } from "@/components/document-gallery"
+import { DonationOptions } from "@/components/donation-options"
+import { PatientDetails } from "@/components/patient-details"
+import { FaEnvelope, FaPhone, FaHeart, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import Image from "next/image"
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <main className="min-h-screen bg-gradient-to-b from-red-400 via-red-100/10 to-red-500">
+      {/* Hero Section */}
+      <section className="relative w-full h-[50vh] md:h-[60vh] overflow-hidden">
+        <div className="absolute inset-0 bg-black z-10"></div>
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
+          src="/placeholder.svg?height=800&width=1600"
+          alt="Child in need of medical help"
+          fill
           priority
+          className="object-cover"
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
+          <h1 className="text-4xl md:text-3xl lg:text-6xl font-bold tracking-tight leading-tight bg-clip-text text-white  mb-4">
+            Help Save <span className="bg-gradient-to-l from-white to-red-500 text-transparent bg-clip-text font-semibold">Toha's Life</span>
+          </h1>
+          <p className="text-xl md:text-2xl text-white max-w-2xl">
+            Every donation brings us closer to a successful heart operation
+          </p>
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#donate"
+            className="mt-8 px-8 py-4 bg-red-500 hover:bg-red-600 text-white font-bold rounded-full text-lg transition-all transform hover:scale-105 shadow-lg"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+            Donate Now
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      <div className="max-w-6xl mx-auto px-4 py-12">
+        {/* Urgency Bar */}
+        <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mb-12 rounded shadow-sm">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <p className="text-amber-800 font-medium">
+              <span className="font-bold">Urgent:</span> Toha's operation is scheduled soon. Your help is needed now.
+            </p>
+            <CountdownTimer targetDate="2025-04-15T00:00:00" />
+          </div>
+        </div>
+
+        {/* Two Column Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
+          {/* Left Column - 3/5 */}
+          <div className="lg:col-span-3">
+            <PatientDetails />
+            <div className="w-full mx-auto">
+              <DocumentGallery />
+            </div>
+          </div>
+
+          {/* Right Column - 2/5 */}
+          <div className="lg:col-span-2" id="donate">
+            <div className="bg-white rounded-xl shadow-xl p-6 sticky top-8">
+              <button
+                type="button"
+                className="w-full py-4 mb-5 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
+              >
+                Donate Now
+              </button>              <DonationOptions />
+            </div>
+          </div>
+        </div>
+
+        {/* Testimonials */}
+        {/* <section className="mt-20 mb-12">
+          <h2 className="text-3xl font-bold text-center mb-10">Messages of Support</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="bg-white p-6 rounded-lg shadow-md">
+                <p className="text-gray-600 italic mb-4">
+                  "I'm praying for Lily's speedy recovery. Stay strong, little one!"
+                </p>
+                <p className="font-semibold text-gray-800">- Sarah Johnson</p>
+              </div>
+            ))}
+          </div>
+        </section> */}
+      </div>
+
+      {/* Footer */}
+
+      <footer className="bg-gradient-to-r from-black via-black/50 to-black text-white py-14">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+
+            {/* About Section */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center md:justify-start">
+                <FaHeart className="text-red-400 mr-2" /> About This Campaign
+              </h3>
+              <p className="text-blue-100 leading-relaxed">
+                Toha's parents created this campaign to cover the cost of his urgent heart surgery. 100% of donations go directly to the hospital.
+              </p>
+            </div>
+
+            {/* Contact Section */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center md:justify-start">
+                <FaEnvelope className="text-yellow-400 mr-2" /> Contact Us
+              </h3>
+              <p className="text-blue-100 flex items-center justify-center md:justify-start">
+                <FaEnvelope className="mr-2" />
+                <a href="mailto:help.toha@example.com" className="hover:underline">help.toha@example.com</a>
+              </p>
+              <p className="text-blue-100 flex items-center justify-center md:justify-start mt-2">
+                <FaPhone className="mr-2" />
+                <a href="tel:+8801734053116" className="hover:underline">+8801734053116</a>
+              </p>
+            </div>
+
+            {/* Social Media Section */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center md:justify-start">
+                Follow Us
+              </h3>
+              <div className="flex justify-center md:justify-start space-x-4 text-2xl">
+                <a href="#" className="text-blue-400 hover:text-white"><FaFacebook /></a>
+                <a href="#" className="text-blue-300 hover:text-white"><FaTwitter /></a>
+                <a href="#" className="text-pink-400 hover:text-white"><FaInstagram /></a>
+              </div>
+            </div>
+          </div>
+
+          {/* Copyright Section */}
+          <div className="mt-12 pt-6 border-t border-white text-center text-white text-sm">
+            <p>Copyright &copy; {new Date().getFullYear()} Help Toha's Heart Campaign. All Rights Reserved.</p>
+          </div>
+        </div>
       </footer>
-    </div>
-  );
+    </main>
+  )
 }
+
