@@ -21,7 +21,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-4xl md:text-3xl lg:text-6xl font-bold tracking-tight leading-tight bg-clip-text text-white  mb-4">
-            Help Save <span className="bg-gradient-to-l from-white to-red-500 text-transparent bg-clip-text font-semibold">Toha's Life</span>
+            Help Save <span className="bg-gradient-to-l from-white to-red-500 text-transparent bg-clip-text font-semibold">&apos;Toha&apos;s Life</span>
           </h1>
           <p className="text-xl md:text-2xl text-white max-w-2xl">
             Every donation brings us closer to a successful heart operation
@@ -40,7 +40,7 @@ export default function Home() {
         <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mb-12 rounded shadow-sm">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <p className="text-amber-800 font-medium">
-              <span className="font-bold">Urgent:</span> Toha's operation is scheduled soon. Your help is needed now.
+              <span className="font-bold">Urgent:</span> Toha&apos;s operation is scheduled soon. Your help is needed now.
             </p>
             <CountdownTimer targetDate="2025-04-15T00:00:00" />
           </div>
@@ -76,7 +76,7 @@ export default function Home() {
             {[1, 2, 3].map((i) => (
               <div key={i} className="bg-white p-6 rounded-lg shadow-md">
                 <p className="text-gray-600 italic mb-4">
-                  "I'm praying for Lily's speedy recovery. Stay strong, little one!"
+                  &apos;I&apos;m praying for Lily&apos;s speedy recovery. Stay strong, little one!&apos;
                 </p>
                 <p className="font-semibold text-gray-800">- Sarah Johnson</p>
               </div>
@@ -97,7 +97,7 @@ export default function Home() {
                 <FaHeart className="text-red-400 mr-2" /> About This Campaign
               </h3>
               <p className="text-blue-100 leading-relaxed">
-                Toha's parents created this campaign to cover the cost of his urgent heart surgery. 100% of donations go directly to the hospital.
+                Toha&apos;s parents created this campaign to cover the cost of his urgent heart surgery. 100% of donations go directly to the hospital.
               </p>
             </div>
 
@@ -108,11 +108,11 @@ export default function Home() {
               </h3>
               <p className="text-blue-100 flex items-center justify-center md:justify-start">
                 <FaEnvelope className="mr-2" />
-                <a href="mailto:help.toha@example.com" className="hover:underline">help.toha@example.com</a>
+                <a href="mailto:help.toha@example.com" className="hover:underline">&apos;help.toha@example.com&apos;</a>
               </p>
               <p className="text-blue-100 flex items-center justify-center md:justify-start mt-2">
                 <FaPhone className="mr-2" />
-                <a href="tel:+8801734053116" className="hover:underline">+8801734053116</a>
+                <a href="tel:+8801734053116" className="hover:underline">&apos;+8801734053116&apos;</a>
               </p>
             </div>
 
@@ -131,11 +131,10 @@ export default function Home() {
 
           {/* Copyright Section */}
           <div className="mt-12 pt-6 border-t border-white text-center text-white text-sm">
-            <p>Copyright &copy; {new Date().getFullYear()} Help Toha's Heart Campaign. All Rights Reserved.</p>
+            <p>Copyright &copy; {new Date().getFullYear()} Help Toha&apos;s Heart Campaign. All Rights Reserved.</p>
           </div>
         </div>
       </footer>
     </main>
   )
 }
-
