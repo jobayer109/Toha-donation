@@ -32,6 +32,12 @@ export default function Home() {
           >
             Donate Now
           </a>
+          <a
+            href="#donate"
+            className="mt-8 px-8 py-4 bg-red-500 hover:bg-red-600 text-white font-bold rounded-full text-lg transition-all transform hover:scale-105 shadow-lg"
+          >
+            Donate Now
+          </a>
         </div>
       </section>
 
