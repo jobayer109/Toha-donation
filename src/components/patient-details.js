@@ -5,11 +5,18 @@ export function PatientDetails() {
     <section className="mb-12">
       <div className="flex flex-col md:flex-row gap-8">
         <div className="md:w-1/3">
-          <div className="w-full aspect-square rounded-xl overflow-hidden shadow-md sticky top-8">
-            <Image src="/toha.jpeg?height=400&width=400" alt="Toha&apos;s photo" fill className="object-fill" />
+          <div className="">
+            <div className="flex flex-col gap-2 h-full">
+              <div>
+                <Image src="/toha.jpeg" alt="Toha's photo" width={400} height={200} className="object-fit rounded-lg" />
+              </div>
+              <Image src="/toha1.jpeg" alt="Toha's photo" width={400} height={200} className="object-fit rounded-lg" />
+              {/* <Image src="/toha2.jpeg" alt="Toha's photo" width={400} height={300} className=" rounded-lg" /> */}
+            </div>
+
           </div>
         </div>
-        <div className="md:w-2/3">
+        <div className="md:w-2/3 h-full">
           <div className="bg-white p-6 rounded-xl shadow-md h-full">
             <div className="flex flex-wrap gap-2 mb-4">
               <div className="bg-blue-50 px-4 py-2 rounded-full">

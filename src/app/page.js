@@ -54,7 +54,7 @@ export default function Home() {
             <p className="text-amber-800 font-medium">
               <span className="font-bold">Urgent:</span> ত্বহার অপারেশনের তারিখ খুব শীঘ্রই জানানো হবে। আপনার সাহায্য আবশ্যক
             </p>
-            <CountdownTimer targetDate="2025-04-15T00:00:00" />
+            <CountdownTimer targetDate="2025-03-28T00:00:00" />
           </div>
         </div>
 
@@ -91,9 +91,9 @@ export default function Home() {
             {/* About Section */}
             <div>
               <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center md:justify-start">
-                <FaHeart className="text-red-400 mr-2" /> এই ক্যাম্পেইন সম্পর্কে
+                এই ক্যাম্পেইন সম্পর্কে
               </h3>
-              <p className="leading-relaxed text-gray-300">
+              <p className="leading-relaxed">
                 ত্বহার বাবা-মা তার জরুরি হৃদযন্ত্রের অপারেশনের খরচ যোগাতে এই ক্যাম্পেইন শুরু করেছেন। আপনার দেওয়া অনুদান সরাসরি হাসপাতালে পৌঁছাবে।
               </p>
             </div>
@@ -101,7 +101,7 @@ export default function Home() {
             {/* Contact Section */}
             <div>
               <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center md:justify-start">
-                <FaEnvelope className="text-yellow-400 mr-2" /> যোগাযোগ
+                যোগাযোগ
               </h3>
               <p className="text-blue-100 flex items-center justify-center md:justify-start mt-2">
                 <FaPhone className="mr-2" />

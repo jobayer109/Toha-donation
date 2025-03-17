@@ -42,7 +42,7 @@ export function DonationOptions() {
       </div>
 
       <div className="mb-6">
-        <label className="block text-gray-700 font-medium mb-2">ব্যাংক ট্রান্সফার</label>
+        <label className="block text-gray-700 font-bold mb-2">ব্যাংক ট্রান্সফার</label>
         <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
           <p className="text-sm text-gray-700 mb-1">
             ইসলামী ব্যাংক, বাংলাদেশ
@@ -51,18 +51,16 @@ export function DonationOptions() {
             <span className="font-medium">একাউন্টঃ</span> Toha&apos;s Medical Fund
           </p>
           <p className="text-sm text-gray-700 mb-1">
-            <span className="font-medium">একাউন্ট নাম্বারঃ</span> 017XXXXXXXX
+            <span className="font-medium">একাউন্ট নাম্বারঃ</span> XXXXXXXXXXX
           </p>
-          <p className="text-sm text-gray-700">
-            <span className="font-medium">ব্রাঞ্চঃ</span> Main Branch
-          </p>
+
         </div>
       </div>
 
 
 
-      <p className="mt-4 text-sm text-gray-500 text-center">
-        আপনার দান ত্বহার জীবন রক্ষাকারী হৃদযন্ত্রের অপারেশনের জন্য সরাসরি সহায়তা করবে।
+      <p className="mt-4 text-md text-red-800 text-center">
+        আপনার দান ত্বহার জীবন জন্য সরাসরি সহায়তা করবে।
       </p>
     </div>
   )
