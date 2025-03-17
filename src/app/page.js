@@ -75,7 +75,7 @@ export default function Home() {
                 type="button"
                 className="w-full py-4 mb-5 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
               >
-                আপনার সাহায্য পাঠান
+                নিচের নাম্বারে আপনার সাহায্য পাঠান
               </button>              <DonationOptions />
             </div>
           </div>
