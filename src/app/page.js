@@ -129,7 +129,7 @@ export default function Home() {
                 <div className="flex space-x-3 justify-center md:justify-start">
                   {/* Facebook Share */}
                   <a
-                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`}
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার জীবন বাঁচাতে আপনার সাহায্য দরকার! ❤️")}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-blue-600 text-white px-2 py-2 rounded-lg hover:bg-blue-700"
@@ -139,9 +139,10 @@ export default function Home() {
 
                   {/* Twitter Share */}
                   <a
-                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("তোহার জীবন বাঁচাতে আপনার সাহায্য দরকার! ❤️")}`}
+                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার জীবন বাঁচাতে আপনার সাহায্য দরকার! ❤️")}`}
                     target="_blank"
                     rel="noopener noreferrer"
+
                     className="bg-blue-400 text-white px-2 py-2 rounded-lg hover:bg-blue-500"
                   >
                     <FaTwitter />
@@ -149,7 +150,7 @@ export default function Home() {
 
                   {/* WhatsApp Share */}
                   <a
-                    href={`https://api.whatsapp.com/send?text=${encodeURIComponent("তোহার জীবন বাঁচাতে আপনার সাহায্য দরকার! ❤️\n\n" + currentUrl)}`}
+                    href={`https://api.whatsapp.com/send?text=${encodeURIComponent("ত্বহার জীবন বাঁচাতে আপনার সাহায্য দরকার! ❤️\n\n" + currentUrl)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-green-500 text-white px-2 py-2 rounded-lg hover:bg-green-600"
@@ -159,7 +160,7 @@ export default function Home() {
 
                   {/* LinkedIn Share */}
                   <a
-                    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`}
+                    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার জীবন বাঁচাতে আপনার সাহায্য দরকার! ❤️")}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-blue-700 text-white px-2 py-2 rounded-lg hover:bg-blue-800"
