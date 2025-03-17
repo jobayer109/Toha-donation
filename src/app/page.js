@@ -39,7 +39,7 @@ export default function Home() {
           </p>
           <a
             href="#donate"
-            className="mt-8 px-8 py-4 bg-red-500 hover:bg-red-600 text-white font-bold rounded-full text-lg transition-all transform hover:scale-105 shadow-lg"
+            className="mt-8 px-8 py-4 bg-red-500 hover:bg-red-600 text-white font-bold rounded-full text-lg transition-all transform hover:scale-105 shadow-lg animate-pulse"
           >
             Donate Now
           </a>
@@ -52,7 +52,7 @@ export default function Home() {
         <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mb-12 rounded shadow-sm">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <p className="text-amber-800 font-medium">
-              <span className="font-bold">Urgent:</span> ত্বহার অপারেশনের তারিখ খুব শীঘ্রই জানানো হবে। আপনার সাহায্য আবশ্যক
+              <span className="font-bold text-red-500 text-md"> ঘোষণা:</span> ত্বহার অপারেশনের তারিখ খুব শীঘ্রই জানানো হবে।
             </p>
             <CountdownTimer targetDate="2025-03-28T00:00:00" />
           </div>
@@ -63,7 +63,8 @@ export default function Home() {
           {/* Left Column - 3/5 */}
           <div className="lg:col-span-3">
             <PatientDetails />
-            <div className="w-full mx-auto">
+            <div className="w-full mx-auto mt-20">
+              <h3 className="text-2xl text-center md:text-left font-semibold mb-4">মেডিকেল ডকুমেন্টস</h3>
               <DocumentGallery />
             </div>
           </div>
@@ -73,7 +74,7 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-xl p-6 sticky top-8">
               <button
                 type="button"
-                className="w-full py-4 mb-5 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
+                className="w-full py-4 mb-5 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg animate-bounce"
               >
                 নিচের নাম্বারে আপনার সাহায্য পাঠান
               </button>              <DonationOptions />
@@ -94,7 +95,7 @@ export default function Home() {
                 এই ক্যাম্পেইন সম্পর্কে
               </h3>
               <p className="leading-relaxed">
-                ত্বহার বাবা-মা তার জরুরি হৃদযন্ত্রের অপারেশনের খরচ যোগাতে এই ক্যাম্পেইন শুরু করেছেন। আপনার দেওয়া অনুদান সরাসরি হাসপাতালে পৌঁছাবে।
+                ত্বহার বাবা-মা তার অপারেশনের খরচ যোগাতে এই ক্যাম্পেইন শুরু করেছেন। আপনার দেওয়া অনুদান সরাসরি ত্বহার জীবন বাঁচাতে ভূমিকা রাখবে।
               </p>
             </div>
 
@@ -119,8 +120,8 @@ export default function Home() {
                 কিভাবে সাহায্য করতে পারেন?
               </h3>
               <div className="flex flex-col space-y-3 text-lg text-center md:text-left">
-                <a href="#donate" className=" text-white rounded-lg hover:bg-red-600">
-                  Donate Now ❤️
+                <a href="#donate" className=" text-white rounded-lg hover:bg-red-600 ‍animate-pulse">
+                  <span className="animate-pulse">Donate Now ❤️</span>
                 </a>
 
                 {/* Social Share Buttons */}
