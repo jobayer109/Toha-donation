@@ -75,7 +75,7 @@ export default function Home() {
                 type="button"
                 className="w-full py-4 mb-5 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
               >
-                Donate Now
+                আপনার সাহায্য পাঠান
               </button>              <DonationOptions />
             </div>
           </div>
@@ -175,7 +175,8 @@ export default function Home() {
 
           {/* Copyright Section */}
           <div className="mt-12 pt-6 border-t border-white text-center text-white text-sm">
-            <p>Copyright &copy; {new Date().getFullYear()} Help Toha&apos;s Heart Campaign. All Rights Reserved.</p>
+            <p>Copyright &copy; {new Date().getFullYear()} Help Toha&apos;s Heart Campaign. All Rights Reserved. </p>
+            <p className="mt-1 text-gray-300">Developed by <span className="">Jobayer Ahmed</span></p>
           </div>
         </div>
       </footer>

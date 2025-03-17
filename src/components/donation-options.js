@@ -20,9 +20,7 @@ export function DonationOptions() {
           ].map((method) => (
             <div
               key={method.id}
-              className={`flex items-center p-3 border rounded-lg cursor-pointer transition-colors ${paymentMethod === method.id ? "border-blue-500 bg-blue-50" : "border-gray-200 hover:bg-gray-50"
-                }`}
-              onClick={() => setPaymentMethod(method.id)}
+              className={`flex items-center p-3 border rounded-lg transition-colors border-gray-400`}
             >
               <div className="w-10 h-10 relative mr-3">
                 <Image
@@ -51,7 +49,7 @@ export function DonationOptions() {
             <span className="font-medium">একাউন্টঃ</span> Toha&apos;s Medical Fund
           </p>
           <p className="text-sm text-gray-700 mb-1">
-            <span className="font-medium">একাউন্ট নাম্বারঃ</span> XXXXXXXXXXX
+            <span className="font-medium">একাউন্ট নাম্বারঃ</span> <span className="text-amber-700">pending</span>
           </p>
 
         </div>
