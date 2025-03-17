@@ -11,34 +11,27 @@ export function PatientDetails() {
         </div>
         <div className="md:w-2/3">
           <div className="bg-white p-6 rounded-xl shadow-md h-full">
-            <div className="flex flex-wrap gap-4 mb-4">
+            <div className="flex flex-wrap gap-2 mb-4">
               <div className="bg-blue-50 px-4 py-2 rounded-full">
-                <span className="text-blue-700 font-medium">Age: 6 years</span>
+                <span className="text-blue-700 font-medium">বয়সঃ ২ বছর ১১ মাস</span>
               </div>
               <div className="bg-blue-50 px-4 py-2 rounded-full">
-                <span className="text-blue-700 font-medium">Diagnosis: Congenital Heart Defect</span>
+                <span className="text-red-700 font-medium">অসুস্থতার ধরণঃ গুরুতর হৃদরোগ সমস্যা</span>
               </div>
               <div className="bg-amber-50 px-4 py-2 rounded-full">
-                <span className="text-amber-700 font-medium">Operation Date: April 15, 2025</span>
+                <span className="text-amber-700 font-medium">অপারেশনের তারিখ: এখনও নির্ধারিত হয়নি</span>
               </div>
             </div>
             <p className="text-gray-700 mb-4">
-              Toha is a bright, cheerful 6-year-old who loves drawing, playing with his dolls, and dreams of becoming a
-              doctor someday. He was diagnosed with a congenital heart defect shortly after birth and has been under
-              medical supervision since then.
+              ত্বহা ২ বছর ১১ মাসের বয়সের একটি শিশু। জন্মের পরপরই তার জটিল হৃদরোগ (Congenital Heart Defect) ধরা পড়ে, যার জন্য সে সবসময় চিকিৎসকের পর্যবেক্ষণে রয়েছে।
             </p>
+            <p className="text-gray-700 mb-2">অবস্থা খুবই সংকটাপন্ন।
+              সম্প্রতি তার শারীরিক অবস্থার অবনতি ঘটেছে, এবং ডাক্তাররা জানিয়েছেন যে অবিলম্বে অপারেশন প্রয়োজন তার হৃদযন্ত্র ঠিক করতে। এই সার্জারি তার জীবন রক্ষার জন্য অত্যন্ত জরুরি, যা তাকে একটি সুস্থ, স্বাভাবিক ভবিষ্যৎ উপহার দিতে পারে। যদিওবা এই অপারেশনের সময় তার জীবনের যথেষ্ট ঝুকি রয়েছে। </p>
+            <p className="text-gray-700 mb-4"> প্রয়োজনীয় তহবিল:
+              অপারেশন, হাসপাতাল খরচ, এবং পরবর্তী চিকিৎসার জন্য মোট ৫ লাখ ৮০ হাজার টাকা প্রয়োজন।
+              ত্বহার পরিবার ও আত্মীয়স্বজনের প্রচেষ্টায় এখন পর্যন্ত ২ লাখ টাকা সংগ্রহ করা হয়েছে, কিন্তু বাকি ৩ লাখ ৮০ হাজার টাকার জন্য তারা আপনাদের সহযোগিতা চায়।</p>
             <p className="text-gray-700 mb-4">
-              Recently, his condition has worsened, and doctors have advised that he needs an urgent operation to
-              repair his heart. This surgery is critical for his survival and to give him a chance at a normal, healthy
-              life.
-            </p>
-            <p className="text-gray-700 font-medium">
-              The total cost of the operation, hospital stay, and post-operative care is estimated at Tk 5,000,000. Toha&apos;s
-              family and friends have managed to raise Tk 1,500,000 so far, but they need your help to reach the full amount.
-            </p>
-            <p className="text-gray-700 font-medium">
-              Your support will make a significant difference in Toha&apos;s life and help him lead a healthier, happier life.
-            </p>
+              আপনার সামান্য সহায়তাও ত্বহার জীবনে বিশাল পরিবর্তন আনতে পারে। আসুন, আমরা সবাই মিলে ত্বহার জন্য নতুন একটা জীবন গড়ে দিই।</p>
           </div>
         </div>
       </div>

@@ -1,12 +1,23 @@
+"use client"
+
 import { CountdownTimer } from "@/components/countdown-timer"
 import { DocumentGallery } from "@/components/document-gallery"
 import { DonationOptions } from "@/components/donation-options"
 import { PatientDetails } from "@/components/patient-details"
-import { FaEnvelope, FaPhone, FaHeart, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaHeart, FaFacebook, FaTwitter, FaInstagram, FaFacebookF, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import Image from "next/image"
+import { useState, useEffect } from "react";
 
 
 export default function Home() {
+  const [currentUrl, setCurrentUrl] = useState("");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setCurrentUrl(window.location.href);
+    }
+  }, []);
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-red-400 via-red-100/10 to-red-500">
       {/* Hero Section */}
@@ -21,10 +32,10 @@ export default function Home() {
         />
         <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-4xl md:text-3xl lg:text-6xl font-bold tracking-tight leading-tight bg-clip-text text-white  mb-4">
-            Help Save <span className="bg-gradient-to-l from-white to-red-500 text-transparent bg-clip-text font-semibold">&apos;Toha&apos;s Life</span>
+            <span className="bg-gradient-to-l from-white to-red-500 text-transparent bg-clip-text font-semibold">&apos;ত্বহা&apos;র জীবন বাঁচাতে এগিয়ে আসুন</span>
           </h1>
           <p className="text-xl md:text-2xl text-white max-w-2xl">
-            Every donation brings us closer to a successful heart operation
+            আপনার আন্তরিক সাহায্যে বেঁচে যাবে ত্বহার জীবন
           </p>
           <a
             href="#donate"
@@ -32,12 +43,7 @@ export default function Home() {
           >
             Donate Now
           </a>
-          <a
-            href="#donate"
-            className="mt-8 px-8 py-4 bg-red-500 hover:bg-red-600 text-white font-bold rounded-full text-lg transition-all transform hover:scale-105 shadow-lg"
-          >
-            Donate Now
-          </a>
+
         </div>
       </section>
 
@@ -46,7 +52,7 @@ export default function Home() {
         <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mb-12 rounded shadow-sm">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <p className="text-amber-800 font-medium">
-              <span className="font-bold">Urgent:</span> Toha&apos;s operation is scheduled soon. Your help is needed now.
+              <span className="font-bold">Urgent:</span> ত্বহার অপারেশনের তারিখ খুব শীঘ্রই জানানো হবে। আপনার সাহায্য আবশ্যক
             </p>
             <CountdownTimer targetDate="2025-04-15T00:00:00" />
           </div>
@@ -74,21 +80,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Testimonials */}
-        {/* <section className="mt-20 mb-12">
-          <h2 className="text-3xl font-bold text-center mb-10">Messages of Support</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white p-6 rounded-lg shadow-md">
-                <p className="text-gray-600 italic mb-4">
-                  &apos;I&apos;m praying for Lily&apos;s speedy recovery. Stay strong, little one!&apos;
-                </p>
-                <p className="font-semibold text-gray-800">- Sarah Johnson</p>
-              </div>
-            ))}
-          </div>
-        </section> */}
       </div>
 
       {/* Footer */}
@@ -100,39 +91,86 @@ export default function Home() {
             {/* About Section */}
             <div>
               <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center md:justify-start">
-                <FaHeart className="text-red-400 mr-2" /> About This Campaign
+                <FaHeart className="text-red-400 mr-2" /> এই ক্যাম্পেইন সম্পর্কে
               </h3>
-              <p className="text-blue-100 leading-relaxed">
-                Toha&apos;s parents created this campaign to cover the cost of his urgent heart surgery. 100% of donations go directly to the hospital.
+              <p className="leading-relaxed text-gray-300">
+                ত্বহার বাবা-মা তার জরুরি হৃদযন্ত্রের অপারেশনের খরচ যোগাতে এই ক্যাম্পেইন শুরু করেছেন। আপনার দেওয়া অনুদান সরাসরি হাসপাতালে পৌঁছাবে।
               </p>
             </div>
 
             {/* Contact Section */}
             <div>
               <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center md:justify-start">
-                <FaEnvelope className="text-yellow-400 mr-2" /> Contact Us
+                <FaEnvelope className="text-yellow-400 mr-2" /> যোগাযোগ
               </h3>
-              <p className="text-blue-100 flex items-center justify-center md:justify-start">
-                <FaEnvelope className="mr-2" />
-                <a href="mailto:help.toha@example.com" className="hover:underline">&apos;help.toha@example.com&apos;</a>
+              <p className="text-blue-100 flex items-center justify-center md:justify-start mt-2">
+                <FaPhone className="mr-2" />
+                <a href="tel:+8801619786462" className="hover:underline mr-2">01619786462</a> (বাবা-মা)
               </p>
               <p className="text-blue-100 flex items-center justify-center md:justify-start mt-2">
                 <FaPhone className="mr-2" />
-                <a href="tel:+8801734053116" className="hover:underline">&apos;+8801734053116&apos;</a>
+                <a href="tel:+8801734053116" className="hover:underline mr-2">01734053116</a> (যোবায়ের)
               </p>
             </div>
 
             {/* Social Media Section */}
             <div>
               <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center md:justify-start">
-                Follow Us
+                কিভাবে সাহায্য করতে পারেন?
               </h3>
-              <div className="flex justify-center md:justify-start space-x-4 text-2xl">
-                <a href="#" className="text-blue-400 hover:text-white"><FaFacebook /></a>
-                <a href="#" className="text-blue-300 hover:text-white"><FaTwitter /></a>
-                <a href="#" className="text-pink-400 hover:text-white"><FaInstagram /></a>
+              <div className="flex flex-col space-y-3 text-lg text-center md:text-left">
+                <a href="#donate" className=" text-white rounded-lg hover:bg-red-600">
+                  Donate Now ❤️
+                </a>
+
+                {/* Social Share Buttons */}
+                {/* Social Share Buttons */}
+                <p className="text-gray-300">শেয়ার করুনঃ</p>
+                <div className="flex space-x-3 justify-center md:justify-start">
+                  {/* Facebook Share */}
+                  <a
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-600 text-white px-2 py-2 rounded-lg hover:bg-blue-700"
+                  >
+                    <FaFacebookF />
+                  </a>
+
+                  {/* Twitter Share */}
+                  <a
+                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("তোহার জীবন বাঁচাতে আপনার সাহায্য দরকার! ❤️")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-400 text-white px-2 py-2 rounded-lg hover:bg-blue-500"
+                  >
+                    <FaTwitter />
+                  </a>
+
+                  {/* WhatsApp Share */}
+                  <a
+                    href={`https://api.whatsapp.com/send?text=${encodeURIComponent("তোহার জীবন বাঁচাতে আপনার সাহায্য দরকার! ❤️\n\n" + currentUrl)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-green-500 text-white px-2 py-2 rounded-lg hover:bg-green-600"
+                  >
+                    <FaWhatsapp />
+                  </a>
+
+                  {/* LinkedIn Share */}
+                  <a
+                    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-blue-700 text-white px-2 py-2 rounded-lg hover:bg-blue-800"
+                  >
+                    <FaLinkedin />
+                  </a>
+                </div>
+
               </div>
             </div>
+
           </div>
 
           {/* Copyright Section */}
