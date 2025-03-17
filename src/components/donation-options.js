@@ -58,7 +58,7 @@ export function DonationOptions() {
 
 
       <p className="mt-4 text-md text-red-800 text-center">
-        আপনার দান ত্বহার জীবন জন্য সরাসরি সহায়তা করবে।
+        আপনার দান ত্বহার জীবন বাঁচাতে সরাসরি ভূমিকা রাখবে।
       </p>
     </div>
   )
