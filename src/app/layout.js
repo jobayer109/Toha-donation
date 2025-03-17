@@ -41,13 +41,13 @@ export default function RootLayout({ children }) {
         {/* Open Graph Meta Tags for Facebook, LinkedIn, WhatsApp */}
         <meta property="og:title" content="Help Save Toha's Life - Medical Donation Campaign" />
         <meta property="og:description" content="Toha needs urgent heart surgery. Your support can save his life!" />
-        <meta property="og:image" content="https://i.imgur.com/cTqXc8W.jpg" />
+        <meta property="og:image" content="https://i.imgur.com/cTqXc8W.jpeg" />
         <meta property="og:url" content="https://toha-donation.vercel.app" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Save Toha's Life" />
 
         {/* WhatsApp-specific meta tag (same as Open Graph) */}
-        <meta property="og:image:secure_url" content="https://i.imgur.com/cTqXc8W.jpg" />
+        <meta property="og:image:secure_url" content="https://i.imgur.com/cTqXc8W.jpeg" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Help Save Toha's Life" />
         <meta name="twitter:description" content="Toha needs urgent heart surgery. Your support can save his life!" />
-        <meta name="twitter:image" content="https://i.imgur.com/cTqXc8W.jpg" />
+        <meta name="twitter:image" content="https://i.imgur.com/cTqXc8W.jpeg" />
         <meta name="twitter:url" content="https://toha-donation.vercel.app" />
       </head>
       <body className="antialiased">{children}</body>
