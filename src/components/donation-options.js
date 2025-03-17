@@ -14,8 +14,8 @@ export function DonationOptions() {
       <div className="mb-6">
         <div className="space-y-3">
           {[
-            { id: "bkash", name: "বিকাশ", logo: "/bkash.svg", number: "01734053116" },
-            { id: "nagad", name: "নগদ", logo: "/nagad.png", number: "0134053116" },
+            { id: "bkash", name: "বিকাশ", logo: "/bkash.svg", number: "01734133910" },
+            { id: "nagad", name: "নগদ", logo: "/nagad.png", number: "01734133910" },
             { id: "rocket", name: "রকেট", logo: "/rocket.png", number: "XXXXXXXXXX" },
           ].map((method) => (
             <div
