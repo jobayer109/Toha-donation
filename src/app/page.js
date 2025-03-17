@@ -35,7 +35,7 @@ export default function Home() {
             <span className="bg-gradient-to-l from-white to-red-500 text-transparent bg-clip-text font-semibold">&apos;ত্বহা&apos;র জীবন বাঁচাতে এগিয়ে আসুন</span>
           </h1>
           <p className="text-xl md:text-2xl text-white max-w-2xl">
-            আপনার আন্তরিক সাহায্যে বেঁচে যাবে ত্বহার জীবন
+            আপনার আন্তরিক সহায়তায় নতুন জীবন পেতে পারে ত্বহা
           </p>
           <a
             href="#donate"
@@ -95,7 +95,7 @@ export default function Home() {
                 এই ক্যাম্পেইন সম্পর্কে
               </h3>
               <p className="leading-relaxed">
-                ত্বহার বাবা-মা তার অপারেশনের খরচ যোগাতে এই ক্যাম্পেইন শুরু করেছেন। আপনার দেওয়া অনুদান সরাসরি ত্বহার জীবন বাঁচাতে ভূমিকা রাখবে।
+                ত্বহার বাবা-মা তার জীবন রক্ষার জরুরি অপারেশনের খরচ যোগাতে এই ক্যাম্পেইন শুরু করেছেন। আপনার অনুদান সরাসরি ত্বহার চিকিৎসায় সহায়তা করবে এবং তার বেঁচে থাকার আশাকে আরও শক্তিশালী করবে।
               </p>
             </div>
 
@@ -130,7 +130,7 @@ export default function Home() {
                 <div className="flex space-x-3 justify-center md:justify-start">
                   {/* Facebook Share */}
                   <a
-                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার জীবন বাঁচাতে আপনার সাহায্য দরকার! ❤️")}`}
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️")}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-blue-600 text-white px-2 py-2 rounded-lg hover:bg-blue-700"
@@ -140,7 +140,7 @@ export default function Home() {
 
                   {/* Twitter Share */}
                   <a
-                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার জীবন বাঁচাতে আপনার সাহায্য দরকার! ❤️")}`}
+                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️")}`}
                     target="_blank"
                     rel="noopener noreferrer"
 
@@ -151,7 +151,7 @@ export default function Home() {
 
                   {/* WhatsApp Share */}
                   <a
-                    href={`https://api.whatsapp.com/send?text=${encodeURIComponent("ত্বহার জীবন বাঁচাতে আপনার সাহায্য দরকার! ❤️\n\n" + currentUrl)}`}
+                    href={`https://api.whatsapp.com/send?text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️\n\n" + currentUrl)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-green-500 text-white px-2 py-2 rounded-lg hover:bg-green-600"
@@ -161,7 +161,7 @@ export default function Home() {
 
                   {/* LinkedIn Share */}
                   <a
-                    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার জীবন বাঁচাতে আপনার সাহায্য দরকার! ❤️")}`}
+                    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️")}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-blue-700 text-white px-2 py-2 rounded-lg hover:bg-blue-800"
