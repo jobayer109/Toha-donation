@@ -14,7 +14,7 @@ export const metadata = {
     siteName: "Save Toha's Life",
     images: [
       {
-        url: "https://i.imgur.com/cTqXc8W.jpg", // Direct image URL
+        url: "https://i.imgur.com/cTqXc8W.jpeg", // Direct image URL
         width: 1200,
         height: 630,
         alt: "Toha's Medical Fundraising Campaign",
@@ -28,7 +28,7 @@ export const metadata = {
     card: "summary_large_image", // Large image preview
     title: "Help Save Toha's Life",
     description: "Toha needs urgent heart surgery. Your support can save his life!",
-    images: ["https://i.imgur.com/cTqXc8W.jpg"], // Direct image URL
+    images: ["https://i.imgur.com/cTqXc8W.jpeg"], // Direct image URL
     url: "https://toha-donation.vercel.app",
     siteName: "Save Toha's Life",
   },
