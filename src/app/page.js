@@ -4,7 +4,7 @@ import { CountdownTimer } from "@/components/countdown-timer"
 import { DocumentGallery } from "@/components/document-gallery"
 import { DonationOptions } from "@/components/donation-options"
 import { PatientDetails } from "@/components/patient-details"
-import { FaEnvelope, FaPhone, FaHeart, FaFacebook, FaTwitter, FaInstagram, FaFacebookF, FaWhatsapp, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaHeart, FaFacebook, FaTwitter, FaInstagram, FaFacebookF, FaWhatsapp, FaLinkedin, FaFacebookMessenger } from "react-icons/fa";
 import Image from "next/image"
 import { useState, useEffect } from "react";
 
@@ -41,10 +41,70 @@ export default function Home() {
             href="#donate"
             className="mt-8 px-8 py-4 bg-red-500 hover:bg-red-600 text-white font-bold rounded-full text-lg transition-all transform hover:scale-105 shadow-lg border border-white"
           >
-            Donate Now
+            ডোনেট করতে এখানে ক্লিক করুন
           </a>
 
+          <div className="mt-6">
+            <p className="mb-2 text-lg text-amber-400">অথবা, </p>
+            <p className="text-emerald-500 text-2xl font-bold mb-3">শেয়ার করুন</p>
+            <div className="flex space-x-5 justify-center md:justify-start">
+              {/* Facebook Share */}
+              <a
+                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 text-white px-3 py-3 rounded-lg hover:bg-blue-700"
+              >
+                <FaFacebookF />
+              </a>
+
+              {/* Messenger Share */}
+              <a
+                href={`https://messenger.com/sharer.php?u=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 text-white px-3 py-3 rounded-lg hover:bg-blue-700"
+              >
+                <FaFacebookMessenger />
+              </a>
+
+
+              {/* WhatsApp Share */}
+              <a
+                href={`https://api.whatsapp.com/send?text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️\n\n" + currentUrl)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 text-white px-3 py-3 rounded-lg hover:bg-green-600"
+              >
+                <FaWhatsapp />
+              </a>
+
+              {/* LinkedIn Share */}
+              <a
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-700 text-white px-3 py-3 rounded-lg hover:bg-blue-800"
+              >
+                <FaLinkedin />
+              </a>
+
+              {/* Twitter Share */}
+              <a
+                href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+
+                className="bg-blue-400 text-white px-3 py-3 rounded-lg hover:bg-blue-500"
+              >
+                <FaTwitter />
+              </a>
+
+
+            </div>
+          </div>
         </div>
+
       </section>
 
       <div className="max-w-6xl mx-auto px-4 py-12">
@@ -121,40 +181,40 @@ export default function Home() {
               </h3>
               <div className="flex flex-col space-y-3 text-lg text-center md:text-left">
                 <a href="#donate" className=" text-white rounded-lg hover:bg-red-600 ‍animate-pulse">
-                  <span className="animate-pulse">Donate Now ❤️</span>
+                  <span className="animate-pulse font-bold text-xl">Donate Now ❤️</span>
                 </a>
 
                 {/* Social Share Buttons */}
                 {/* Social Share Buttons */}
-                <p className="text-gray-300">শেয়ার করুনঃ</p>
+                <p className="text-gray-300">শেয়ার করুন:</p>
                 <div className="flex space-x-3 justify-center md:justify-start">
                   {/* Facebook Share */}
                   <a
                     href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️")}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-blue-600 text-white px-2 py-2 rounded-lg hover:bg-blue-700"
+                    className="bg-blue-600 text-white px-3 py-3 rounded-lg hover:bg-blue-700"
                   >
                     <FaFacebookF />
                   </a>
 
-                  {/* Twitter Share */}
+                  {/* Messenger Share */}
                   <a
-                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️")}`}
+                    href={`https://messenger.com/sharer.php?u=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️")}`}
                     target="_blank"
                     rel="noopener noreferrer"
-
-                    className="bg-blue-400 text-white px-2 py-2 rounded-lg hover:bg-blue-500"
+                    className="bg-blue-600 text-white px-3 py-3 rounded-lg hover:bg-blue-700"
                   >
-                    <FaTwitter />
+                    <FaFacebookMessenger />
                   </a>
+
 
                   {/* WhatsApp Share */}
                   <a
                     href={`https://api.whatsapp.com/send?text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️\n\n" + currentUrl)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-green-500 text-white px-2 py-2 rounded-lg hover:bg-green-600"
+                    className="bg-green-500 text-white px-3 py-3 rounded-lg hover:bg-green-600"
                   >
                     <FaWhatsapp />
                   </a>
@@ -164,10 +224,23 @@ export default function Home() {
                     href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️")}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-blue-700 text-white px-2 py-2 rounded-lg hover:bg-blue-800"
+                    className="bg-blue-700 text-white px-3 py-3 rounded-lg hover:bg-blue-800"
                   >
                     <FaLinkedin />
                   </a>
+
+                  {/* Twitter Share */}
+                  <a
+                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+
+                    className="bg-blue-400 text-white px-3 py-3 rounded-lg hover:bg-blue-500"
+                  >
+                    <FaTwitter />
+                  </a>
+
+
                 </div>
 
               </div>

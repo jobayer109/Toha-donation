@@ -95,18 +95,18 @@ export function DonationOptions() {
       `}</style>
       </div>
       <div className="mb-6">
-        <label className="block text-gray-700 font-bold mb-2">ব্যাংক ট্রান্সফার</label>
+        <label className="block text-red-500 text-lg font-bold mb-2">ব্যাংক ট্রান্সফার</label>
         <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
           <p className="text-sm font-bold text-gray-700 mb-1">
             ইসলামী ব্যাংক বাংলাদেশ লিমিটেড
           </p>
           <p className="text-sm text-gray-700 mb-1">
-            <span className="font-medium">একাউন্টঃ</span> <span className="text-red-700">Monira Begum</span>
+            <span className="font-medium">একাউন্ট:</span> <span className="text-gray-700">Monira Begum</span>
           </p>
           <div className="flex items-center gap-2 mb-1">
             <p className="text-sm text-gray-700">
-              <span className="font-medium">একাউন্ট নাম্বারঃ</span>{" "}
-              <span className="text-red-700 text-md font-bold">
+              <span className="font-medium">একাউন্ট নাম্বার:</span>{" "}
+              <span className="text-red-500 text-md font-bold">
                 20508640200030009
               </span>
             </p>
@@ -120,7 +120,7 @@ export function DonationOptions() {
 
           </div>
           <p className="text-sm text-gray-700 mb-1">
-            <span className="font-medium ">শাখাঃ</span> <span className="text-red-700 text-md">সুন্দরগঞ্জ, গাইবান্ধা</span>
+            <span className="font-medium ">শাখা:</span> <span className="text-gray-700">Sundarganj, Gaibandha</span>
           </p>
 
         </div>
