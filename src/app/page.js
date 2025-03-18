@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 
 
 export default function Home() {
-  const [currentUrl, setCurrentUrl] = useState("");
+  const [currentUrl, setCurrentUrl] = useState("https://toha-donation.vercel.app/");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
