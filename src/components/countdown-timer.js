@@ -35,7 +35,7 @@ export function CountdownTimer({ targetDate }) {
   return (
     <div className="flex flex-col items-center md:flex-row md:justify-center bg-white shadow-md rounded-lg p-3 md:p-6 border border-amber-300">
       <h3 className="text-md md:text-lg text-center font-semibold text-amber-800 mb-3 md:mb-0 md:mr-4">
-        অপারেশনের সময় বাকি (আনুমানিক):
+        অপারেশনের সময় বাকি:
       </h3>
 
       <div className="grid grid-cols-4 gap-3 md:gap-6 text-center">
