@@ -120,7 +120,7 @@ export function DonationOptions() {
 
           </div>
           <p className="text-sm text-gray-700 mb-1">
-            <span className="font-medium ">শাখা:</span> <span className="text-gray-700">Sundarganj, Gaibandha</span>
+            <span className="font-medium ">শাখা:</span> <span className="text-gray-700">Tusvandar Sub Branch, Kaliganj, Lalmonirhat</span>
           </p>
 
         </div>
@@ -128,7 +128,7 @@ export function DonationOptions() {
 
 
 
-      <p className="mt-4 text-md text-red-800 text-center">
+      <p className="mt-4 text-md text-red-600 text-center">
         আপনার দান ত্বহার জীবন বাঁচাতে সরাসরি ভূমিকা রাখবে।
       </p>
     </div>

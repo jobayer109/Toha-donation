@@ -86,13 +86,18 @@ const images = [
 export const DocumentGallery = () => {
   return (
     <div className="border border-gray-400 rounded-lg shadow-md p-6">
-      <ImageGallery items={images}
+      <ImageGallery
+        items={images}
         showThumbnails={true}
+        thumbnailPosition="bottom"
         showFullscreenButton={true}
         showPlayButton={true}
         // showBullets={true}
         autoPlay={true}
+        slideDuration={800}
+        slideInterval={5000}
       />
+
     </div>
   );
 };
