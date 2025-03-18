@@ -59,14 +59,14 @@ export default function Home() {
               </a>
 
               {/* Messenger Share */}
-              <a
+              {/* <a
                 href={`https://messenger.com/sharer.php?u=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-600 text-white px-3 py-3 rounded-lg hover:bg-blue-700"
               >
                 <FaFacebookMessenger />
-              </a>
+              </a> */}
 
 
               {/* WhatsApp Share */}
@@ -199,14 +199,14 @@ export default function Home() {
                   </a>
 
                   {/* Messenger Share */}
-                  <a
+                  {/* <a
                     href={`https://messenger.com/sharer.php?u=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️")}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-blue-600 text-white px-3 py-3 rounded-lg hover:bg-blue-700"
                   >
                     <FaFacebookMessenger />
-                  </a>
+                  </a> */}
 
 
                   {/* WhatsApp Share */}
