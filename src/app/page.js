@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-red-400 via-red-100/10 to-red-500">
       {/* Hero Section */}
-      <section className="relative w-full h-[50vh] md:h-[60vh] overflow-hidden">
+      <section className="relative w-full h-[60vh] md:h-[70vh] overflow-hidden py-12">
         <div className="absolute inset-0 bg-black z-10"></div>
         <Image
           src="/placeholder.svg?height=800&width=1600"
@@ -44,10 +44,10 @@ export default function Home() {
             ডোনেট করতে এখানে ক্লিক করুন
           </a>
 
-          <div className="mt-6">
-            <p className="mb-2 text-lg text-amber-400">অথবা, </p>
-            <p className="text-emerald-500 text-2xl font-bold mb-3">শেয়ার করুন</p>
-            <div className="flex space-x-5 justify-center md:justify-start">
+          <div className="mt-3">
+            <p className="text-md text-amber-400">অথবা, </p>
+            <p className="text-emerald-500 text-2xl font-bold mb-2">শেয়ার করুন</p>
+            <div className="flex space-x-4 justify-center md:justify-start">
               {/* Facebook Share */}
               <a
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent("ত্বহার হার্টের অপারেশনের খরচ জোগাতে তার পাশে দাঁড়ান 🙏❤️")}`}
@@ -109,7 +109,7 @@ export default function Home() {
 
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Urgency Bar */}
-        <div className="bg-red-50 border-l-8 border-red-500 p-4 mb-12 rounded shadow-sm">
+        <div className="bg-red-50 border-l-8 border-red-500 p-3 mb-12 rounded shadow-sm">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <p className="text-amber-800 font-medium">
               <span className="font-bold text-red-500 text-md"> ঘোষণা:</span> ত্বহার অপারেশনের তারিখ খুব শীঘ্রই জানানো হবে।
