@@ -35,11 +35,11 @@ export default function Home() {
             <span className="bg-gradient-to-l from-white to-red-500 text-transparent bg-clip-text font-semibold">&apos;ত্বহা&apos;র জীবন বাঁচাতে এগিয়ে আসুন</span>
           </h1>
           <p className="text-xl md:text-2xl text-white max-w-2xl">
-            আপনার আন্তরিক সহায়তায় নতুন জীবন পেতে পারে ত্বহা
+            আপনার সহায়তায় ত্বহা পেতে পারে নতুন জীবন
           </p>
           <a
             href="#donate"
-            className="mt-8 px-8 py-4 bg-red-500 hover:bg-red-600 text-white font-bold rounded-full text-lg transition-all transform hover:scale-105 shadow-lg animate-pulse"
+            className="mt-8 px-8 py-4 bg-red-500 hover:bg-red-600 text-white font-bold rounded-full text-lg transition-all transform hover:scale-105 shadow-lg border border-white"
           >
             Donate Now
           </a>
@@ -49,7 +49,7 @@ export default function Home() {
 
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Urgency Bar */}
-        <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mb-12 rounded shadow-sm">
+        <div className="bg-red-50 border-l-8 border-red-500 p-4 mb-12 rounded shadow-sm">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <p className="text-amber-800 font-medium">
               <span className="font-bold text-red-500 text-md"> ঘোষণা:</span> ত্বহার অপারেশনের তারিখ খুব শীঘ্রই জানানো হবে।
@@ -74,7 +74,7 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-xl p-6 sticky top-8">
               <button
                 type="button"
-                className="w-full py-4 mb-5 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg animate-bounce"
+                className="w-full py-4 mb-5 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
               >
                 নিচের নাম্বারে আপনার সাহায্য পাঠান
               </button>              <DonationOptions />
