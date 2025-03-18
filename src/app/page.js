@@ -112,7 +112,7 @@ export default function Home() {
         <div className="bg-red-50 border-l-8 border-red-500 p-3 mb-12 rounded shadow-sm">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <p className="text-amber-800 font-medium">
-              <span className="font-bold text-red-500 text-md"> ঘোষণা:</span> ত্বহার অপারেশনের তারিখ খুব শীঘ্রই জানানো হবে।
+              <span className="font-bold text-red-500 text-md"> ঘোষণা:</span> অপারেশনের তারিখ - আগামী ৯ই এপ্রিল ২০২৫
             </p>
             <CountdownTimer targetDate="2025-04-09T00:00:00" />
           </div>
