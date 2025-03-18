@@ -114,7 +114,7 @@ export default function Home() {
             <p className="text-amber-800 font-medium">
               <span className="font-bold text-red-500 text-md"> ঘোষণা:</span> ত্বহার অপারেশনের তারিখ খুব শীঘ্রই জানানো হবে।
             </p>
-            <CountdownTimer targetDate="2025-03-28T00:00:00" />
+            <CountdownTimer targetDate="2025-04-09T00:00:00" />
           </div>
         </div>
 
